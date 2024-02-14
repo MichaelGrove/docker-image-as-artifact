@@ -1,0 +1,6 @@
+services:
+  python:
+    image: python:3-alpine
+    container_name: python-container
+    volumes:
+      - .:/home/demo
