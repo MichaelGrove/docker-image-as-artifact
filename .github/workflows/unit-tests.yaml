@@ -45,8 +45,5 @@ jobs:
           docker load --input /tmp/myimage.tar
           docker image ls -a    
 
-      # - name: Build docker image
-      #   run: docker build -t my-python-app .
-
-      # - name: Run tests
-      #   run: docker run -it --rm --name python-container my-python-app
+      - name: Run tests
+        run: docker run -it --rm --name python-container myimage
